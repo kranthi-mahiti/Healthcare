@@ -43,4 +43,8 @@
     </string-array>
     <string name="title_activity_symptoms_detail">SymptomsDetailActivity</string>
     <string name="title_activity_suggestions">SuggestionsActivity</string>
+    <string name="are_you_suffering_for_joint_pain">Are you Suffering for Joint Pain ?</string>
+    <string name="are_you_feeling_itching_sensation">Are you Feeling Itching sensation ?</string>
+    <string name="capture_picture_of_patient_tongue_and_lower_eyelid">Capture Picture of Patient Tongue and lower eyelid ?</string>
+    <string name="please_explain_if_you_are_facing_any_other_issues">Please explain if you are facing any other issues ?</string>
 </resources>
