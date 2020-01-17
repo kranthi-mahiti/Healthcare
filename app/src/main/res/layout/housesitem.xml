@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="165dp"
+    android:layout_height="165dp">
+
+    <RelativeLayout
+        android:id="@+id/card"
+        android:layout_margin="15dp"
+        android:background="@drawable/red_border"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/yellowhouse100"/>
+
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:layout_above="@+id/llView"
+            android:layout_centerHorizontal="true"
+            android:drawableStart="@drawable/ic_access_time_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insulin"
+            android:textSize="16sp"
+            android:textColor="#FF243CC0"/>
+
+        <LinearLayout
+            android:id="@+id/llView"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/housenumber"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="23"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:textColor="#e00303"/>
+
+            <TextView
+                android:id="@+id/housename"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Indukalyan B"
+                android:textSize="16sp"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

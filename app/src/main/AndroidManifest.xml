@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="mahiti.org.healthcare">
+
+    <application
+        android:name=".app.HealthCareApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".views.activites.SuggestionsActivity"
+            android:label="@string/title_activity_suggestions" />
+        <activity
+            android:name=".views.activites.SymptomsDetailActivity"
+            android:label="@string/title_activity_symptoms_detail" />
+        <activity
+            android:name=".views.activites.GatherDetailsActivity"
+            android:label="@string/title_activity_gather_details" />
+        <activity
+            android:name=".views.activites.HouseMemeberActivity"
+            android:label="@string/title_activity_house_memeber" />
+        <activity
+            android:name=".views.activites.HouseActivity"
+            android:label="@string/title_activity_house" />
+        <activity
+            android:name=".views.activites.VillagesListActivity"
+            android:label="@string/title_activity_villages_list" />
+        <activity
+            android:name=".views.activites.SearchResultActivity"
+            android:label="@string/title_activity_search_result"
+            android:launchMode="singleTop">
+
+            <!-- to identify this activity as "searchable" -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".views.activites.HomeScreenActivity"
+            android:label="@string/title_activity_home_screen">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".views.activites.LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".views.activites.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="HealthCare">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".views.activites.MainActivity">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+    </application>
+
+</manifest>
