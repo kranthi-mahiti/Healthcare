@@ -13,6 +13,14 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
+            android:name=".views.activites.ConsultDoctor"
+            android:label="@string/title_activity_consult_doctor"
+            ></activity>
+        <activity
+            android:name=".views.activites.SuggestionActivity2"
+            android:label="@string/title_activity_suggestion2"
+             />
+        <activity
             android:name=".views.activites.SuggestionsActivity"
             android:label="@string/title_activity_suggestions" />
         <activity

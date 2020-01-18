@@ -41,6 +41,7 @@
 
 
             <TextView
+                android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Are you Suffering for Joint Pain ?"
@@ -207,7 +208,8 @@
                         android:layout_height="50dp"
                         android:background="@drawable/roundcorner"
                         android:layout_centerInParent="true"
-                        app:srcCompat="@drawable/voicerecord100" />
+                        app:srcCompat="@drawable/voicerecord100"
+                        android:layout_marginBottom="20dp"/>
 
                 </RelativeLayout>
 
@@ -223,6 +225,7 @@
         android:layout_marginRight="10dp"
         android:background="@drawable/roundcorner"
         android:id="@+id/continue_btn"
+        android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:text="Continue" />
