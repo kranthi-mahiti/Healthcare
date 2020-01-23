@@ -6,10 +6,17 @@
         android:id="@+id/action_settings"
         android:orderInCategory="100"
         android:title="@string/action_settings"
-        app:showAsAction="never" />
+        app:showAsAction="ifRoom" />
     <item
         android:id="@+id/menu_search"
         android:title="@string/menu_search"
+        android:icon="@drawable/ic_action_action_search"
         appcompat:actionViewClass="androidx.appcompat.widget.SearchView"
-        appcompat:showAsAction="never"/>
+        appcompat:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/myswitch"
+        android:title="Local Network"
+        app:showAsAction="ifRoom"
+        app:actionLayout="@layout/toogle"
+        app:actionViewClass="android.widget.Switch" />
 </menu>

@@ -8,7 +8,6 @@ import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.view.View;
 import android.widget.Button;
@@ -17,18 +16,19 @@ import android.widget.TextView;
 import mahiti.org.healthcare.R;
 import mahiti.org.healthcare.app.HealthCareConstants;
 
-
-public class SuggestionsActivity extends AppCompatActivity {
-    Button btn_continue;
+public class SuggestionActivity2 extends AppCompatActivity {
+    Button btn_continue,btn_consultant;
     TextView t1, t2, t3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_suggestions);
+        setContentView(R.layout.activity_suggestion2);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         btn_continue = findViewById(R.id.continue_btn);
+        btn_consultant=findViewById(R.id.continue_btn1);
         setTitle(HealthCareConstants.SESSION_MANAGER.getHouseNo());
         t1 = findViewById(R.id.patient_name);
         t2 = findViewById(R.id.patient_birthday);
@@ -39,8 +39,16 @@ public class SuggestionsActivity extends AppCompatActivity {
         btn_continue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(SuggestionsActivity.this, SuggestionActivity2.class);
+                Intent i = new Intent(SuggestionActivity2.this, ConsultDoctor.class);
                 startActivity(i);
+            }
+        });
+        btn_consultant.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(SuggestionActivity2.this, PatientFormActivity.class);
+                startActivity(i);
+
             }
         });
     }

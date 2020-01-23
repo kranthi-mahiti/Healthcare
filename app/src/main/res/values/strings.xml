@@ -41,10 +41,24 @@
         <item>last 2 days</item>
         <item>last week</item>
     </string-array>
+    <string-array name="array_address">
+        <item>Banglore</item>
+        <item>Tirupati</item>
+        <item>Kerala</item>
+        <item>Bihar</item>
+        <item>Maharastra</item>
+    </string-array>
     <string name="title_activity_symptoms_detail">SymptomsDetailActivity</string>
     <string name="title_activity_suggestions">SuggestionsActivity</string>
-    <string name="are_you_suffering_for_joint_pain">Are you Suffering for Joint Pain ?</string>
-    <string name="are_you_feeling_itching_sensation">Are you Feeling Itching sensation ?</string>
-    <string name="capture_picture_of_patient_tongue_and_lower_eyelid">Capture Picture of Patient Tongue and lower eyelid ?</string>
-    <string name="please_explain_if_you_are_facing_any_other_issues">Please explain if you are facing any other issues ?</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="these_are_the_normal_symptoms_don_t_worry_please_wait_for_a_day_and_have_lots_of_liquids_avoid_spicy_junk_oily_foods">These are the normal symptoms don\'t worry,Please wait for a day and have lots of liquids.Avoid spicy/junk/oily foods</string>
+    <string name="title_activity_suggestion2">SuggestionActivity2</string>
+    <string name="title_activity_consult_doctor">ConsultDoctor</string>
+    <string name="consult_a_doctor_immediately">Consult a Doctor Immediately</string>
+    <string name="title_activity_patient_form">PatientFormActivity</string>
+    <string name="title_activity_patient_form2">PatientFormActivity2</string>
+    <string name="title_activity_patient_form3">PatientFormActivity3</string>
+    <string name="title_activity_patient_form_history">PatientFormHistoryActivity</string>
 </resources>

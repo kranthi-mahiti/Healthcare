@@ -8,7 +8,6 @@ import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.view.View;
 import android.widget.Button;
@@ -17,14 +16,13 @@ import android.widget.TextView;
 import mahiti.org.healthcare.R;
 import mahiti.org.healthcare.app.HealthCareConstants;
 
-
-public class SuggestionsActivity extends AppCompatActivity {
+public class PatientFormActivity3 extends AppCompatActivity {
     Button btn_continue;
     TextView t1, t2, t3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_suggestions);
+        setContentView(R.layout.activity_patient_form3);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -39,10 +37,11 @@ public class SuggestionsActivity extends AppCompatActivity {
         btn_continue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(SuggestionsActivity.this, SuggestionActivity2.class);
+                Intent i = new Intent(PatientFormActivity3.this, PatientFormHistoryActivity.class);
                 startActivity(i);
             }
         });
+
     }
 
 }

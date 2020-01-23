@@ -31,7 +31,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/appbar"
         android:layout_margin="10dp"
-        android:background="@drawable/bg001"
         app:cardCornerRadius="20dp">
 
         <LinearLayout
@@ -42,10 +41,10 @@
 
 
             <TextView
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/are_you_suffering_for_joint_pain"
+                android:text="Are you Suffering for Joint Pain ?"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
@@ -95,7 +94,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/are_you_feeling_itching_sensation"
+                android:text="Are you Feeling Itching sensation ?"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
@@ -145,7 +144,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/capture_picture_of_patient_tongue_and_lower_eyelid"
+                android:text="Capture Picture of Patient Tongue and lower eyelid ?"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
@@ -188,7 +187,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/please_explain_if_you_are_facing_any_other_issues"
+                android:text="Please explain if you are facing any other issues ?"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
@@ -197,7 +196,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
-
                 <RelativeLayout
 
                     android:layout_width="match_parent"
@@ -209,8 +207,8 @@
                         android:layout_height="50dp"
                         android:background="@drawable/roundcorner"
                         android:layout_centerInParent="true"
-                        android:layout_marginBottom="30dp"
-                        app:srcCompat="@drawable/voicerecord100" />
+                        app:srcCompat="@drawable/voicerecord100"
+                        android:layout_marginBottom="20dp"/>
 
                 </RelativeLayout>
 
@@ -226,6 +224,7 @@
         android:layout_marginRight="10dp"
         android:background="@drawable/roundcorner"
         android:id="@+id/continue_btn"
+        android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:text="Continue" />
